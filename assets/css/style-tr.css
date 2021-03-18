@@ -17,10 +17,11 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 1;
+  padding: 10px 0;
 }
 
 .section_header.section_header_bg {
-  background: green;
+  background: #145d09;
 }
 
 .main_menu {
@@ -32,14 +33,19 @@ a:hover {
 .main_menu li a {
   color: #fff;
   text-transform: uppercase;
-  font-size: 24px;
-  padding: 0 15px;
+  font-size: 16px;
+  padding: 0 25px;
+  border-left: 1px solid #fff;
+  font-family: "UTMAvo";
+}
+.main_menu li:nth-child(1) a {
+  border-left: 0;
 }
 .main_menu li:last-child a {
   display: block;
-  width: 80px;
-  height: 50px;
   overflow: hidden;
+  border-left: none;
+  margin-left: 30px;
 }
 .main_menu li:last-child a img {
   width: 100%;
@@ -49,6 +55,7 @@ a:hover {
 
 .slider_banner .item {
   width: 100%;
+  display: block;
 }
 .slider_banner .item img {
   width: 100%;
@@ -57,15 +64,18 @@ a:hover {
 .section_aboutus {
   position: relative;
   padding: 60px 0;
+  background-image: url(./../img/bg1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .section_aboutus .element_dangki {
   position: absolute;
-  bottom: -15px;
+  bottom: -35px;
   left: 50%;
   transform: translate(-50%, 0);
 }
 .section_aboutus .element_dangki .btn_dangkingay {
-  font-family: SVN-Avo;
+  font-family: UTMAvo;
   font-size: 24px;
   color: #fff;
   background-image: linear-gradient(to right, red, yellow);
@@ -75,8 +85,9 @@ a:hover {
 }
 
 .btn_dangkingay {
-  font-family: SVN-Avo;
-  font-size: 24px;
+  font-family: UTMAvo;
+  font-weight: bold;
+  font-size: 20px;
   color: #fff;
   background-image: linear-gradient(to right, red, yellow);
   text-transform: uppercase;
@@ -86,22 +97,25 @@ a:hover {
 
 .title_color {
   text-align: center;
+  margin-bottom: 50px;
 }
 .title_color h2 {
   text-transform: uppercase;
-  font-size: 46px;
-  color: #000;
-  font-family: SVN-Avo;
+  font-size: 30px;
+  color: #4d4d4d;
+  font-family: UTMAvoBold;
+  font-weight: bold;
 }
 .title_color h2 span {
-  color: green;
-  font-size: 55px;
+  color: #145d09;
+  font-size: 45px;
 }
 .title_color span {
-  font-size: 46px;
+  font-size: 30px;
   text-transform: uppercase;
-  color: green;
-  font-family: SVN-Avo;
+  color: #145d09;
+  font-family: UTMAvoBold;
+  font-weight: 900;
 }
 
 .element_aboutsus {
@@ -109,11 +123,18 @@ a:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-top: 150px;
 }
 .element_aboutsus .item {
-  width: 32%;
-  overflow: hidden;
+  width: 30%;
   text-align: center;
+  margin-bottom: 45px;
+}
+.element_aboutsus .item:nth-child(2) {
+  margin-top: -45px;
+}
+.element_aboutsus .item:nth-child(5) {
+  margin-top: 45px;
 }
 .element_aboutsus .item .img {
   width: 370px;
@@ -121,6 +142,8 @@ a:hover {
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
+  border: 15px solid #ddd;
+  box-shadow: 1px 5px 10px #00000070;
 }
 .element_aboutsus .item .img img {
   width: 100%;
@@ -128,19 +151,24 @@ a:hover {
   object-fit: cover;
 }
 .element_aboutsus .content h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  color: green;
+  color: #145d09;
+  font-family: "UTMAvoBold";
 }
 .element_aboutsus .content p {
   font-size: 18px;
-  color: grey;
+  color: #333333;
+  font-family: "UTMAvo";
+  font-weight: bold;
+  text-align: justify;
 }
 
 .element_giaiphap {
   width: 40%;
   overflow: hidden;
+  text-align: center;
 }
 .element_giaiphap .btn_dangkingay {
   margin: 30px auto;
@@ -152,20 +180,26 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin-bottom: 15px;
+  padding: 0 0 15px 0;
+  text-align: left;
+}
+.element_giaiphap .item:nth-child(7):before {
+  display: none;
 }
 .element_giaiphap .item:before {
   position: absolute;
   content: "";
-  width: 4 50px;
+  width: 250px;
   height: 2px;
-  background: green;
+  background: #145d09;
   bottom: 0;
   left: 0;
 }
 .element_giaiphap .item > span {
   display: block;
-  font-size: 30px;
-  color: green;
+  font-size: 60px;
+  color: #145d09;
   width: 50px;
   height: 50px;
   display: flex;
@@ -174,32 +208,43 @@ a:hover {
 }
 .element_giaiphap .item p {
   font-size: 18px;
-  font-family: SVN-Avo;
+  font-family: UTMAvo;
+  font-weight: bold;
   width: calc(100% - 50px);
   padding-left: 20px;
   margin: 0;
 }
 .element_giaiphap .item p span {
   text-transform: uppercase;
-  color: green;
+  color: #333333;
+  font-family: "UTMAvoBold";
 }
 
+.title_giaiphap {
+  margin-bottom: 30px;
+}
 .title_giaiphap h3 {
   font-size: 26px;
   text-transform: uppercase;
   margin-top: 0;
   text-align: center;
-  font-family: SVN-Avo;
+  font-family: UTMAvobold;
+  color: #145d09;
 }
 .title_giaiphap h2 {
   font-size: 45px;
   text-transform: uppercase;
   margin-top: 0;
   text-align: center;
-  font-family: SVN-Avo;
+  font-family: UTMAvobold;
+  color: #145d09;
 }
 
 .section_giaiphap {
+  padding: 100px 0;
+  background-image: url(./../img/bg2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 60px 0;
 }
 .section_giaiphap .row {
@@ -220,7 +265,7 @@ a:hover {
 }
 
 .section_nangnguc {
-  background-image: url(./../img/LT-07.png);
+  background-image: url(./../img/bg3.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 0;
@@ -232,15 +277,18 @@ a:hover {
 .section_nangnguc .row .video {
   width: 45%;
   overflow: hidden;
+  text-align: center;
 }
 .section_nangnguc .row .video .btn_video {
   width: 100%;
   height: 350px;
   background: orange;
   position: relative;
+  margin: 45px 0;
+  border: none;
 }
 .section_nangnguc .row .video .btn_video img {
-  possition: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -250,12 +298,13 @@ a:hover {
   text-align: center;
 }
 .title_video h2, .title_video h3 {
-  font-size: 30px;
-  color: grey;
+  font-size: 26px;
   text-transform: uppercase;
+  font-family: "UTMAvoBold";
+  color: #4d4d4d;
 }
 .title_video h3 {
-  color: green;
+  color: #145d09;
 }
 
 .section_banner_page {
@@ -271,6 +320,12 @@ a:hover {
   font-size: 22px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.title_style_2 h2 {
+  font-family: "UTMAvoBold";
+  line-height: 50px;
+  text-shadow: 0px 1px 3px black;
 }
 
 .element_video_style_2 {
@@ -289,11 +344,14 @@ a:hover {
 }
 
 .section_video_style2 {
-  background: grey;
+  background-image: url(./../img/bg4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
 }
 
 .section_link_form {
-  background: green;
+  background: #01a200;
   padding: 25px 0;
 }
 
@@ -320,14 +378,14 @@ a:hover {
   margin-left: 25px;
 }
 .element_link_form .item .content p {
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 8px 0;
 }
 .element_link_form .item .content h3 {
   font-size: 20px;
-  color: yellow;
+  color: #ffff00;
   text-transform: uppercase;
   margin: 0;
 }
@@ -337,11 +395,11 @@ a:hover {
   background: transparent;
 }
 .element_link_form .item:nth-child(2) span .btn_dangkingay {
-  color: #000;
+  color: #145d09;
   background: #fff;
   border: none;
   border-radius: 0;
-  padding: 10px 15px;
+  padding: 10px 25px;
 }
 .element_link_form .item:nth-child(2) h3 {
   color: #fff;
@@ -349,7 +407,6 @@ a:hover {
 
 .slider_client {
   width: 100%;
-  overflow: hidden;
 }
 .slider_client .item {
   width: 100%;
@@ -357,13 +414,23 @@ a:hover {
 .slider_client .item img {
   width: 100%;
 }
+.slider_client .slick-dots li button:before {
+  font-size: 15px;
+}
+.slider_client .slick-prev {
+  left: 0;
+  z-index: 1;
+}
+.slider_client .slick-next {
+  right: 15px;
+}
 
 .section_img_client {
   padding: 60px 0;
 }
 
 .section_noibo {
-  background-image: url(./../img/LT-07.png);
+  background-image: url(./../img/bg5.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 0;
@@ -395,7 +462,7 @@ a:hover {
 }
 .form_contact form span {
   width: 100%;
-  border: 1px solid grey;
+  border: 1px solid #80808061;
   display: block;
   height: 50px;
   margin-bottom: 20px;
@@ -406,6 +473,7 @@ a:hover {
   width: 100%;
   height: 100%;
   padding: 0 15px;
+  border: none;
 }
 .form_contact form span input::placeholder {
   font-size: 16px;
@@ -421,6 +489,7 @@ a:hover {
   width: 100%;
   height: 100%;
   padding: 15px;
+  border: none;
 }
 .form_contact form span textarea::placeholder {
   font-size: 16px;
@@ -445,15 +514,17 @@ a:hover {
 .form_contact form span:last-child .guithongtin_btn {
   width: 100%;
   height: 100%;
-  background: grey;
+  background: #80808042;
   color: #000;
   text-transform: uppercase;
   text-align: center;
   border: none;
+  font-family: "UTMAvoBold";
+  font-size: 20px;
 }
 
 .section_form {
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 .element_fanpage {
@@ -486,10 +557,10 @@ a:hover {
 }
 .section_map .address_element {
   position: absolute;
-  right: 0;
+  right: 20%;
   top: 50%;
   transform: translate(0, -50%);
-  background: green;
+  background: #145d09;
   width: 500px;
   padding: 30px;
 }
@@ -499,6 +570,7 @@ a:hover {
   margin: 0 0 20px 0;
   text-transform: uppercase;
   color: #fff;
+  font-family: "UTMAvoBold";
 }
 .section_map .address_element ul li {
   display: flex;
@@ -531,4 +603,79 @@ a:hover {
   font-size: 16px;
   color: #000;
   text-align: center;
+}
+
+.top_up {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: grid;
+  z-index: 100;
+  background: green;
+  padding: 15px;
+}
+
+.section_link {
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  display: grid;
+  z-index: 100;
+}
+.section_link a {
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  width: 35px;
+}
+.section_link a img {
+  max-width: 100%;
+  width: 100%;
+}
+.circle {
+  border-radius: 50%;
+  transition: height 0.25s ease, width 0.25s ease;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+.circle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+  border-radius: 50%;
+  border: 1px solid #00aff2;
+  background: #00aff27a;
+  animation: ripple 2.5s linear infinite;
+}
+.circle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid #00aff2;
+  background: #00aff27a;
+  z-index: -1;
+  animation: ripple 2s linear 1s infinite;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.75);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.25);
+    opacity: 0;
+  }
 }
