@@ -41,7 +41,36 @@ $(document).ready(function() {
       return false;
   });
 
+  $('.slider_review').slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
 
+  $('.close_btn').click(function() {
+    $('.element_form_fix').toggleClass('active');
+  })
 
 
 

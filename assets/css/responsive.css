@@ -31,3 +31,160 @@
   font-family: Montserrat-Black;
   src: url(./../fonts/Montserrat-Black.ttf);
 }
+
+
+@media screen and (max-width: 1100px) and (min-width: 1000px) {
+  .element_aboutsus .item .img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 570px) {
+  .element_aboutsus .item .img {
+    width: 150px;
+    height: 150px;
+  }
+  .element_link_form .item {
+    width: 50%;
+  }
+  .element_link_form .item .content h3 {
+    font-size: 16px;
+  }
+  .element_link_form .item .content p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .element_giaiphap {
+    width: 100%;
+  }
+  .element_img_giaiphap , .section_nangnguc .row .video {
+    width: 100%;
+  }
+  .title_color h2 , .title_color span {
+    font-size: 18px;
+  }
+  .title_color h2 span , .title_giaiphap h2 {
+    font-size: 24px;
+  }
+  .section_aboutus {
+    padding: 20px 0;
+  }
+  .element_aboutsus {
+    margin-top: 70px;
+  }
+  .element_aboutsus .content h3 {
+    font-size: 16px;
+  }
+  .element_aboutsus .content p , .btn_dangkingay {
+    font-size: 14px !important;
+  }
+  .title_giaiphap h3 , .title_video h2, .title_video h3 {
+    font-size: 18px;
+  }
+  .text_right h2 {
+    padding-left: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+  .title_style_2 h2 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .element_video_style_2 .item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .main_menu li a {
+    font-size: 12px;
+    padding: 0 15px;
+  }
+  .main_menu li:last-child a {
+    width: 100px;
+    margin-left: 0;
+  }
+  .element_aboutsus .item {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .element_aboutsus .item .img {
+    width: 250px;
+    height: 250px;
+  }
+  .element_giaiphap , .element_img_giaiphap {
+    padding: 0 15px;
+  }
+  .section_nangnguc {
+    padding: 20px 15px;
+  }
+  .section_slider_review {
+    padding: 20px 15px;
+  }
+  .slider_review .slick-slide.slick-current.slick-active.slick-center .item img {
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    transform: inherit;
+    width: 100%;
+    z-index: 10;
+  }
+  .slider_review .slick-dots {
+    position: inherit;
+    right: inherit;
+    top: inherit;
+    transform: inherit;
+    z-index: 10;
+    width: 100%;
+  }
+  .slider_review {
+    margin: 0;
+  }
+  .element_link_form .item .content h3 , .element_link_form .item .content p {
+    font-size: 16px;
+  }
+  .section_img_client {
+    padding: 0;
+  }
+  .section_noibo .row .element_noibo {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 15px;
+  }
+  .section_form {
+    padding: 30px 15px;
+  }
+  .title_color {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .section_map .address_element {
+    position: inherit;
+    right: inherit;
+    top: inherit;
+    transform: inherit;
+    background: #145d09;
+    width: 100%;
+    padding: 30px;
+  }
+  .top_up {
+    right: 10px;
+    bottom: 10px;
+  }
+  .section_link {
+    bottom: 10px;
+  }
+  .element_aboutsus {
+    margin-top: 30px;
+  }
+  .element_aboutsus .content p {
+    text-align: center;
+  }
+  .title_color h2, .title_color span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
