@@ -433,7 +433,7 @@ a:hover {
   background-image: url(./../img/bg5.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 60px 0;
+  padding: 60px 0 200px 0;
 }
 .section_noibo .row {
   display: flex;
@@ -812,8 +812,10 @@ a:hover {
 }
 .section_form_fix .element_form_fix .body_form {
   background: #fff;
-  padding: 20px 15px 50px 15px;
+  padding: 20px 15px;
   position: relative;
+  height: 270px;
+  overflow: scroll;
 }
 .section_form_fix .element_form_fix .body_form .item_bs {
   width: 100%;
@@ -850,10 +852,11 @@ a:hover {
   content: "";
   width: 8px;
   height: 8px;
-  border-radius: 50%;
-  background: #145d09;
-  top: 5px;
-  left: -5px;
+  top: 10px;
+  left: -4px;
+  border-top: 8px solid #145d09;
+  border-left: 8px solid #145d09;
+  transform: rotate(45deg);
 }
 .section_form_fix .element_form_fix .body_form .item_bs .text p {
   color: #fff;
@@ -899,10 +902,11 @@ a:hover {
   content: "";
   width: 8px;
   height: 8px;
-  border-radius: 50%;
-  background: #145d09;
-  top: 5px;
-  right: -5px;
+  top: 10px;
+  right: -4px;
+  border-top: 8px solid #145d09;
+  border-left: 8px solid #145d09;
+  transform: rotate(45deg);
 }
 .section_form_fix .element_form_fix .body_form .item_kh .text p {
   color: #fff;
@@ -911,16 +915,6 @@ a:hover {
   position: absolute;
   bottom: -30px;
   left: 45px;
-}
-.section_form_fix .element_form_fix .body_form .form_fix {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.section_form_fix .element_form_fix .body_form .form_fix p img {
-  width: 15px;
-  background: grey;
 }
 .section_form_fix .element_form_fix .form_input {
   padding: 15px 10px;
@@ -931,6 +925,7 @@ a:hover {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 .section_form_fix .element_form_fix .form_input input {
   width: 70%;
@@ -944,15 +939,45 @@ a:hover {
 .section_form_fix .element_form_fix .form_input a img {
   max-width: 100%;
 }
+.section_form_fix .element_form_fix .form_input .form_fix {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.section_form_fix .element_form_fix .form_input .form_fix p {
+  margin: 0;
+}
+.section_form_fix .element_form_fix .form_input .form_fix p img {
+  width: 15px;
+  background: grey;
+}
 
 .close_btn {
   width: 50px;
   height: 50px;
-  background: #145d09;
+  background: #007134;
   border-radius: 50%;
   float: right;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .close_btn:hover {
   cursor: pointer;
+}
+.close_btn img {
+  max-width: 100%;
+  width: 20px;
+}
+.close_btn .chat_btn {
+  display: none;
+}
+
+.close_btn.active img {
+  display: none;
+}
+.close_btn.active .chat_btn {
+  display: block !important;
 }

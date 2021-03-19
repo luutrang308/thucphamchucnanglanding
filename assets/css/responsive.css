@@ -187,4 +187,8 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .section_form_fix {
+    right: 8px;
+    bottom: 65px;
+  }
 }

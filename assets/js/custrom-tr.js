@@ -70,6 +70,7 @@ $(document).ready(function() {
 
   $('.close_btn').click(function() {
     $('.element_form_fix').toggleClass('active');
+    $(this).toggleClass('active');
   })
 
 
